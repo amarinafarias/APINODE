@@ -6,15 +6,15 @@ const User = require ('./User')
 const Task = db.define ('Task',{
     title:{
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false
     },
     description:{
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false
     },
     done:{
         type: DataTypes.BOOLEAN,
-        allowNull: true
+        allowNull: false
     }    
 })
 //relação de que o USER pode ter várias TASKs.
